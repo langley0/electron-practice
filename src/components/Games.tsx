@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ICP from "../utils/icp";
 
 const Games = () => {
   interface GameInfo {
@@ -38,7 +39,7 @@ const Games = () => {
 
   const runGame = () => {
     setRunning(true);
-    window.__ICP__.sendMessage("app/RUN");
+    ICP.__ICP__.sendMessage("app/RUN");
   };
 
   const selectGame = (index: number) => {
