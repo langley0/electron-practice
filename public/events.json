@@ -1,0 +1,11 @@
+{
+  "APP_MINIMIZE": "app/MINIMIZE",
+  "APP_MAXIMIZE": "app/MAXIMIZE",
+  "APP_CLOSE": "app/CLOSE",
+  
+  
+  "LOGIN": "app/LOGIN",
+  "RUN": "app/RUN",
+  
+  "END_OF_EVENTS": "this is not usable event type"
+}

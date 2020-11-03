@@ -1,0 +1,62 @@
+/* font */
+@font-face {
+  font-family: 'NEXONLv1GothicRegular';
+  src: url("./font/NEXONLv1GothicOTF.woff") format("woff");
+}
+@font-face {
+  font-family: 'NEXONLv1GothicOTFBold';
+  src: url("./font/NEXONLv1GothicOTFBold.woff") format("woff");
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-size: 14px;
+  line-height: var(--spacing);
+  color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: column;
+}
+
+.titlebar {
+  z-index: 1000;
+  height: 32px;
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.drag-area {
+  -webkit-app-region: drag;
+  height: 100%;
+  flex: 1;
+}
+
+.titlebar > button {
+  background: none;
+  outline: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 12px;
+}
+
+.titlebar #minimize:hover,
+.titlebar #maximize:hover {
+  background: #fff4;
+}
+
+.titlebar #close:hover {
+  background: #f444;
+}

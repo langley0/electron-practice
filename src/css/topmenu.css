@@ -1,0 +1,20 @@
+
+.topmenu {
+  padding: 1rem;
+  user-select: none;
+}
+
+.topmenu .menuitem {
+  display: inline-block;
+  margin:0 0.3rem;
+  font-family:'NEXONLv1GothicOTFBold';
+  font-size: 1rem;
+}
+.topmenu .menuitem button {
+  cursor: pointer;
+  color:#9fa1a7;
+  background-color: transparent;
+}
+.topmenu .menuitem button:hover {
+  color:#17191d;
+} 

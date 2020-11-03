@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>login for launcher</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Security-Policy" content="script-src 'self'">
+        <link rel="stylesheet" href="./base.css" />
+        <link rel="stylesheet" href="./login.css" />
+        <script type="module" src="./login.mjs" defer></script>
+    </head>
+    <body>
+        <div class="titlebar">
+            <div class="drag-area"></div>
+            <button id="minimize">_</button>
+            <button id="close">🞬</button>
+        </div>
+        <div id="app">
+          <div class="container">
+            <img class="logo" src="./img/logo-white.svg" alt="NEXON" />
+            <input class="input" id="id" type="text" placeholder="이메일 혹은 아이디"/>
+            <input class="input" id="password" type="password" placeholder="비밀번호" />
+
+            <button class="button" id="submit">넥슨 ID 로그인</button>
+          </div>
+        </div>
+    </body>
+</html>
